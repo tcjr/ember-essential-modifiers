@@ -1,13 +1,16 @@
 {
-  "name": "",
-  "version": "0.0.1",
-  "description": "",
+  "name": "ember-essential-modifiers",
+  "version": "0.0.7",
+  "description": "An essential collection of Ember.js modifiers",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember-modifier",
+    "popover",
+    "toggle-class"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexeipanov/"
+    "url": "git+https://github.com/alexeipanov/ember-essential-modifiers.git"
   },
   "license": "MIT",
   "author": {
@@ -35,8 +38,10 @@
   },
   "dependencies": {
     "@babel/core": "^7.23.2",
+    "ember-auto-import": "^2.6.3",
     "ember-cli-babel": "^8.2.0",
-    "ember-cli-htmlbars": "^6.3.0"
+    "ember-cli-htmlbars": "^6.3.0",
+    "ember-modifier": "^4.1.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.15",
@@ -48,7 +53,6 @@
     "@glimmer/tracking": "^1.1.2",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^8.2.2",
-    "ember-auto-import": "^2.6.3",
     "ember-cli": "~5.4.1",
     "ember-cli-clean-css": "^3.0.0",
     "ember-cli-dependency-checker": "^3.3.2",

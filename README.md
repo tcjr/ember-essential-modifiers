@@ -1,8 +1,8 @@
-# <package-name>
+# ember-essential-modifiers
 
-<package-description>
+An essential Ember.js modifiers collection
 
-[![Node.js Package](https://github.com/alexeipanov/<package-name>/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/alexeipanov/<package-name>/actions/workflows/npm-publish.yml)
+[![Node.js Package](https://github.com/alexeipanov/ember-essential-modifiers/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/alexeipanov/ember-essential-modifiers/actions/workflows/npm-publish.yml)
 
 
 ## Compatibility
@@ -15,14 +15,38 @@
 ## Installation
 
 ```
-ember install <package-name>
+ember install ember-essential-modifiers
 ```
 
 
 ## Usage
 
+- toggle-class:
+Toggles className depends on isOn value
 
+```
+<div {{toggle-class isOn=true className="active">
+  Menu
+</div>
+```
 
+Result:
+
+```
+ <div class="active">Menu</div>
+```
+
+- show-popover
+  Displays a popover
+
+```
+<div role="alert" popover="manual" {{show-popover duration=3000}}>
+  Warning!
+</div>
+```
+params:
+- duration<Number>, ms: Number of milliseconds before a popover will be closed
+  if not set or zero: popover will not be closed.
 
 ## Contributing
 
