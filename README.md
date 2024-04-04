@@ -22,6 +22,7 @@ ember install ember-essential-modifiers
 ## Usage
 
 - toggle-class:
+
 Toggles className depends on isOn value
 
 ```
@@ -37,6 +38,7 @@ Result:
 ```
 
 - show-popover
+
   Displays a popover
 
 ```
@@ -46,6 +48,7 @@ Result:
 ```
 params:
 - duration<Number>, ms: Number of milliseconds before a popover will be closed
+  
   if not set or zero: popover will not be closed.
 
 ## Contributing
