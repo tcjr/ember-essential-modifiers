@@ -136,8 +136,8 @@ importers:
         specifier: ^4.0.2
         version: 4.0.2
       ember-essential-modifiers:
-        specifier: 1.0.2
-        version: 1.0.2(ember-source@5.4.1(@babel/core@7.24.4)(@glimmer/component@1.1.2(@babel/core@7.24.4))(rsvp@4.8.5)(webpack@5.91.0))(webpack@5.91.0)
+        specifier: workspace:*
+        version: link:../ember-essential-modifiers
       ember-load-initializers:
         specifier: ^2.1.2
         version: 2.1.2(@babel/core@7.24.4)
@@ -2819,12 +2819,6 @@ packages:
     peerDependenciesMeta:
       '@typescript-eslint/parser':
         optional: true
-
-  ember-essential-modifiers@1.0.2:
-    resolution: {integrity: sha512-UKhSPahlZQlXrfYoyBAFt4NGT7j2KzCI/UartmPF/B4S/Iqds2cR1qjrC6QJL11jAD50jPNpZA4qpwFyKGFcDg==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      ember-source: '>= 4.0.0'
 
   ember-load-initializers@2.1.2:
     resolution: {integrity: sha512-CYR+U/wRxLbrfYN3dh+0Tb6mFaxJKfdyz+wNql6cqTrA0BBi9k6J3AaKXj273TqvEpyyXegQFFkZEiuZdYtgJw==}
@@ -9640,19 +9634,6 @@ snapshots:
       html-tags: 3.3.1
     transitivePeerDependencies:
       - eslint
-
-  ember-essential-modifiers@1.0.2(ember-source@5.4.1(@babel/core@7.24.4)(@glimmer/component@1.1.2(@babel/core@7.24.4))(rsvp@4.8.5)(webpack@5.91.0))(webpack@5.91.0):
-    dependencies:
-      '@babel/core': 7.24.4
-      ember-auto-import: 2.7.2(webpack@5.91.0)
-      ember-cli-babel: 8.2.0(@babel/core@7.24.4)
-      ember-cli-htmlbars: 6.3.0
-      ember-modifier: 4.1.0(ember-source@5.4.1(@babel/core@7.24.4)(@glimmer/component@1.1.2(@babel/core@7.24.4))(rsvp@4.8.5)(webpack@5.91.0))
-      ember-source: 5.4.1(@babel/core@7.24.4)(@glimmer/component@1.1.2(@babel/core@7.24.4))(rsvp@4.8.5)(webpack@5.91.0)
-    transitivePeerDependencies:
-      - '@glint/template'
-      - supports-color
-      - webpack
 
   ember-load-initializers@2.1.2(@babel/core@7.24.4):
     dependencies:
