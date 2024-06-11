@@ -3,6 +3,7 @@ import { cancel, later } from '@ember/runloop';
 import { registerDestructor } from '@ember/destroyable';
 
 const cleanup = function (instance) {
+  // eslint-disable-next-line ember/no-runloop
   cancel(instance.closeTask);
 };
 
@@ -19,6 +20,7 @@ export default class ShowPopover extends Modifier {
   }
 
   autoClose(element, duration) {
+    // eslint-disable-next-line ember/no-runloop
     return later(
       this,
       function () {

@@ -10,7 +10,7 @@ module.exports = {
       root: __dirname,
     },
   },
-  plugins: ['ember'],
+  plugins: ['ember', 'import'],
   extends: [
     'eslint:recommended',
     'plugin:ember/recommended',
