@@ -1,0 +1,3 @@
+packages:
+  - 'ember-essential-modifiers'
+  - 'test-app'
