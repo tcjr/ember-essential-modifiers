@@ -68,7 +68,10 @@
     "edition": "octane"
   },
   "ember-addon": {
-    "app-js": {},
+    "app-js": {
+      "./modifiers/show-popover.js": "./dist/_app_/modifiers/show-popover.js",
+      "./modifiers/toggle-class.js": "./dist/_app_/modifiers/toggle-class.js"
+    },
     "main": "addon-main.cjs",
     "type": "addon",
     "version": 2
